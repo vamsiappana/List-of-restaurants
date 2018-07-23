@@ -1,0 +1,14 @@
+<div class="container">
+
+<h2> Restaurants List: </h2> 
+<form>
+<input type="radio" name="p" id="1" (click)="toggleItems(1)">Open Only <br>
+<input type="radio" name="p" id="2" (click)="toggleItems(2)">Closed Only
+</form>
+<ul>
+  <li *ngFor = "let item of searchResults">
+    <a href="{{item.logoUrl}}" target="_blank">{{item.name}}</a>
+  </li>
+</ul>
+
+</div>  
